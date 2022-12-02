@@ -6,9 +6,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-3 text-lg-left text-center">
-          <div class="mb-4" v-for="(item, i) in contact.info" :key="i">
-            <h5>{{ item.label }}</h5>
-            <p class="small" v-html="item.items.join('<br />')"></p>
+          <div class="mb-4">
+            <h5>{{ contact.address_label }}</h5>
+            <p class="small" v-html="contact.address_value"></p>
+          </div>
+          <div class="mb-4">
+            <h5>{{ contact.phone_label }}</h5>
+            <p class="small" v-html="contact.phone_value"></p>
+          </div>
+          <div class="mb-4">
+            <h5>{{ contact.email_label }}</h5>
+            <p class="small" v-html="contact.email_value"></p>
           </div>
         </div>
         <div class="col-lg-8">

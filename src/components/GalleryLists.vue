@@ -3,13 +3,7 @@
     <div class="row no-gutters">
       <div class="col-lg-4 col-md-6" v-for="(item, i) in items" :key="i">
         <div class="img-wrap">
-          <img
-            v-preview:slot-gallery
-            :data-origin="item.large_img"
-            :src="item.small_img"
-            :alt="item.title"
-            class="img-fluid d-block w-100"
-          />
+          <img v-preview:slot-gallery :data-origin="item.url" :src="item.url" class="img-fluid d-block w-100" />
         </div>
       </div>
     </div>

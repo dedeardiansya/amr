@@ -38,7 +38,7 @@ module.exports = {
           }
         },
         {
-          urlPattern: new RegExp('https://my-json-server.'),
+          urlPattern: new RegExp('https://admin-amr-default-rtdb.'),
           handler: 'networkFirst',
           options: {
             cacheName: 'api-cache'

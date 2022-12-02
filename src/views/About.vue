@@ -12,6 +12,7 @@
             {{ about.paragraph }}
           </p>
           <a :href="about.cv_url" download class="btn btn-dark" v-if="about.cv_url">DOWNLOAD CV</a>
+          <router-link to="/contact" class="btn btn-dark" v-else>CONTACT ME</router-link>
         </div>
       </div>
     </div>

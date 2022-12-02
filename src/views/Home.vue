@@ -6,7 +6,10 @@
       </h1>
       <p class="home-page__subtitle mb-5 text-uppercase">{{ home.app_title }}</p>
       <div class="home-page__socials">
-        <a :href="item.url" target="_blank" v-for="(item, i) in home.socials" :key="i">{{ item.label }}</a>
+        <a v-if="home.fb" :href="home.fb" target="_blank">FACEBOOK</a>
+        <a v-if="home.ig" :href="home.ig" target="_blank">INSTAGRAM</a>
+        <a v-if="home.gh" :href="home.gh" target="_blank">GITHUB</a>
+        <a v-if="home.wa" :href="home.wa" target="_blank">WHATSAPP</a>
       </div>
     </div>
   </div>

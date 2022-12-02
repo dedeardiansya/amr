@@ -3,7 +3,7 @@
     <div class="container">
       <PageTitle>{{ gallery.label }}</PageTitle>
     </div>
-    <GalleryLists :items="gallery.items" />
+    <GalleryLists :items="gallery.images" />
   </div>
 </template>
 
